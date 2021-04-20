@@ -1,0 +1,40 @@
+.about-wrapper {
+  grid-template-columns: 1fr minmax(150px, 280px);
+  gap: 10px;
+  img {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+.about-text-wrapper {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media (max-width: 992px) {
+  .intro-text {
+    font-size: 28px;
+  }
+
+  .about-me-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-wrapper {
+    grid-template-columns: 1fr;
+    img {
+      grid-area: 1/1;
+    }
+  }
+
+  .intro-text {
+    padding-bottom: 20px;
+  }
+
+  .about-text-wrapper {
+    text-align: center;
+  }
+}

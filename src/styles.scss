@@ -36,8 +36,13 @@ body {
 .bg--secondary {
   background-color: var(--secondary);
 }
+
 .bg--primary {
   background-color: var(--primary);
+}
+
+.bg--secondary200 {
+  background-color: var(--secondary-200);
 }
 
 .fc--primary {
@@ -72,11 +77,11 @@ body {
 .fs--20 {
   font-size: 20px;
 }
-.fs--26 {
-  font-size: 26px;
+.fs--25 {
+  font-size: 25px;
 }
-.fs--32 {
-  font-size: 32px;
+.fs--30 {
+  font-size: 30px;
 }
 .fs--36 {
   font-size: 36px;
