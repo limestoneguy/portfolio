@@ -1,0 +1,12 @@
+<section class="section bg--secondary200 pt--40 pb--40">
+  <div class="container">
+    <app-section-title
+      title="Work History"
+      background-title="History"
+    ></app-section-title>
+
+    <div class="mt--40 work-history-list-wrapper display-grid place-item-center">
+      <app-work-history-card *ngFor="let work_history of work_history_array" [work_history]="work_history"></app-work-history-card>
+    </div>
+  </div>
+</section>

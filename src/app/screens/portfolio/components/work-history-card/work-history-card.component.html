@@ -1,0 +1,21 @@
+<div class="bg--secondary history-container">
+  <div class="header-wrapper">
+    <div class="display-flex header place-item-center">
+      <img
+        src="./assets/svgs/work-history-icon.svg"
+        alt=""
+        class="header-icon"
+      />
+      <h3>{{ work_history.designation }}</h3>
+    </div>
+    <p class="mt--10">{{ work_history.company }}</p>
+    <p class="date">
+      {{ work_history.start_date }} - {{ work_history.end_date }}
+    </p>
+    <ul class="mt--20 work-list ls--2">
+      <li *ngFor="let work_item of work_history.responsibilities">
+        {{work_item}}
+      </li>
+    </ul>
+  </div>
+</div>

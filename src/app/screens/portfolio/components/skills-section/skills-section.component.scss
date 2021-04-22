@@ -1,0 +1,4 @@
+.skills-container {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 2vw;
+}

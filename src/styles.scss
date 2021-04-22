@@ -31,6 +31,8 @@
 
 body {
   font-family: Nunito, "Helvetica Neue", sans-serif;
+  color: white;
+  overflow-x: hidden;
 }
 
 .bg--secondary {
@@ -89,6 +91,9 @@ body {
 .fs--70 {
   font-size: 70px;
   line-height: 80px;
+}
+.ls--2{
+  letter-spacing: 2px;
 }
 
 .pt--10 {

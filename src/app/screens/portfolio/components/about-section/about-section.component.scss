@@ -1,3 +1,7 @@
+.section-wrapper {
+  height: 100vh;
+}
+
 .about-wrapper {
   grid-template-columns: 1fr minmax(150px, 280px);
   gap: 10px;
@@ -10,6 +14,11 @@
 .about-text-wrapper {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.about-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 @media (max-width: 992px) {
@@ -28,6 +37,14 @@
     img {
       grid-area: 1/1;
     }
+  }
+
+  .section-wrapper {
+    height: 100%;
+  }
+
+  .about-container{
+    grid-template-columns: 1fr;
   }
 
   .intro-text {
