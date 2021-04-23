@@ -92,7 +92,7 @@ body {
   font-size: 70px;
   line-height: 80px;
 }
-.ls--2{
+.ls--2 {
   letter-spacing: 2px;
 }
 
@@ -270,6 +270,16 @@ a {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+::-webkit-scrollbar {
+  background-color: #828282;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 20px;
 }
 
 @media (max-width: 550px) {

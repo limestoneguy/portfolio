@@ -25,6 +25,7 @@
 
 .message-button {
   max-width: 200px;
+  gap: 6px;
   padding: 5px 20px;
   border: 1px solid var(--primary);
   border-radius: 20px;
@@ -33,12 +34,21 @@
     transition: all 0.2s ease-in;
     font-weight: bold;
   }
+
+  .mail_svg {
+    transition: all 0.2s ease-in;
+    fill: #48e5c2;
+  }
 }
 
 .message-button:hover {
   background-color: var(--primary);
   p {
     color: var(--secondary);
+  }
+
+  .mail_svg {
+    fill: #232323;
   }
 }
 

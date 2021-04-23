@@ -7,5 +7,13 @@
   }
   h3{
     font-size: clamp(45px, 5.5vw, 80px);
+    transition: all 0.4s ease-in;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  h3[data-scroll="in"]{
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

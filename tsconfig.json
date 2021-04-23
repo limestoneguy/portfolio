@@ -8,6 +8,8 @@
     "declaration": false,
     "downlevelIteration": true,
     "strict": true,
+    "types": ["node"],
+    "typeRoots": [ "../node_modules/@types" ],
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
