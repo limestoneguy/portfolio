@@ -1,0 +1,9 @@
+<div class="card-wrapper display-flex place-item-center">
+  <h3 class="fc--white fs--25 skill-name">{{ skill_details.name }}</h3>
+  <!-- <div class="meter-wrapper">
+    <div class="background-bar"></div>
+    <div class="foreground-bar" [ngStyle]="{'width': (200 * skill_details.competence)+'px'}"></div>
+  </div> -->
+
+  <div data-scroll ngModel #skillProgress class="RadialProgress" role="progressbar"></div>
+</div>

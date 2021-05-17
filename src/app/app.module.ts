@@ -11,6 +11,8 @@ import { SkillsSectionComponent } from './screens/portfolio/components/skills-se
 import { WorkHistorySectionComponent } from './screens/portfolio/components/work-history-section/work-history-section.component';
 import { WorkHistoryCardComponent } from './screens/portfolio/components/work-history-card/work-history-card.component';
 import { FooterComponent } from './screens/portfolio/components/footer/footer.component';
+import { NavbarComponent } from './screens/components/navbar/navbar.component';
+import { SkillCardComponent } from './screens/portfolio/components/skill-card/skill-card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { FooterComponent } from './screens/portfolio/components/footer/footer.co
     SkillsSectionComponent,
     WorkHistorySectionComponent,
     WorkHistoryCardComponent,
-    FooterComponent
+    FooterComponent,
+    NavbarComponent,
+    SkillCardComponent
   ],
   imports: [
     BrowserModule,

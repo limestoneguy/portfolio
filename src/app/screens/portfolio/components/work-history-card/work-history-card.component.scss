@@ -21,6 +21,7 @@
 
 .work-list {
   list-style-type: none;
+  font-size: clamp(14px, 2.78vh, 24px);
 
   li:not(:last-child) {
     margin-bottom: 10px;

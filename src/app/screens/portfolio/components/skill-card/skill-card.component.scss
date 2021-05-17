@@ -1,0 +1,70 @@
+.card-wrapper {
+  gap: 20px;
+}
+
+.skill-name {
+  width: 150px;
+  flex: 1;
+}
+
+.meter-wrapper {
+  flex: 1;
+  width: 200px;
+  position: relative;
+  width: 100px;
+  height: 20px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.background-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  background-color: var(--secondary-200);
+  height: 20px;
+}
+
+.foreground-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--primary);
+  height: 20px;
+  border-radius: 4px;
+}
+
+.RadialProgress {
+  --holesize: 60%;
+  --track-bg: var(--secondary-200);
+  // --progress: 50%;
+
+  inline-size: 70px;
+  block-size: 70px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  font-weight: 700;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    background: conic-gradient(
+      var(--primary),
+      var(--primary),
+      var(--primary) var(--progress, 0%),
+      var(--track-bg) var(--progress, 0%) 100%
+    );
+
+    mask-image: radial-gradient(
+      transparent var(--holesize),
+      black calc(var(--holesize) + 0.5px)
+    );
+  }
+}

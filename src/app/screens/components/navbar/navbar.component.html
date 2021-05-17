@@ -1,0 +1,9 @@
+<section class="section bg--secondary nav-wrapper" data-scroll>
+  <div class="container display-flex">
+    <div class="ml--auto nav-links display-flex">
+      <p [ngClass]="{'active': activeLink === 'home'}" (click)="moveToId('home')">Home</p>
+      <p [ngClass]="{'active': activeLink === 'about'}" (click)="moveToId('about')">About</p>
+      <p [ngClass]="{'active': activeLink === 'skills'}" (click)="moveToId('skills')">Skills</p>
+    </div>
+  </div>
+</section>

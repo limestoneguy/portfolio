@@ -5,6 +5,8 @@
   --secondary: #232323;
   --secondary-200: #252929;
   --secondary-300: #828282;
+  scroll-padding-top: 34px;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -33,6 +35,17 @@ body {
   font-family: Nunito, "Helvetica Neue", sans-serif;
   color: white;
   overflow-x: hidden;
+  scrollbar-color: var(--primary);
+}
+
+::-webkit-scrollbar {
+  background-color: #828282;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 20px;
 }
 
 .bg--secondary {

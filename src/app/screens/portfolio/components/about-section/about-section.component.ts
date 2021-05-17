@@ -4,6 +4,7 @@ import {
   ElementRef,
   OnDestroy,
 } from '@angular/core';
+import { HelperService } from 'src/app/services/helper.service';
 declare var require: any;
 const ScrollOut = require('scroll-out');
 @Component({
@@ -14,11 +15,17 @@ const ScrollOut = require('scroll-out');
 export class AboutSectionComponent implements AfterContentInit, OnDestroy {
   scrollOut: any;
 
-  constructor(private elementRef: ElementRef) {}
+  constructor(
+    private elementRef: ElementRef,
+    private helperService: HelperService
+  ) {}
 
   ngAfterContentInit(): void {
     this.scrollOut = ScrollOut({
       scope: this.elementRef.nativeElement,
+      onShown: () => {
+        this.helperService.activeLink = 'about';
+      },
     });
   }
   ngOnDestroy(): void {

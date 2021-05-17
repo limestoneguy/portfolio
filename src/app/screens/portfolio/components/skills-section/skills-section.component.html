@@ -1,19 +1,13 @@
-<section class="section bg--secondary pt--40 pb--40">
+<section id="skills" class="section bg--secondary pt--40 pb--40">
   <div class="container">
     <app-section-title
       background-title="Skills"
       title="Skills"
     ></app-section-title>
 
-    <div class="display-grid skills-container mt--20 ls--2">
-      <h3 class="fc--white fs--25 text-align-center">Angular</h3>
-      <h3 class="fc--white fs--25 text-align-center">NodeJS</h3>
-      <h3 class="fc--white fs--25 text-align-center">Flutter</h3>
-      <h3 class="fc--white fs--25 text-align-center">Core-JAVA</h3>
-      <h3 class="fc--white fs--25 text-align-center">Ionic</h3>
-      <h3 class="fc--white fs--25 text-align-center">Typescript</h3>
-      <h3 class="fc--white fs--25 text-align-center">AWS</h3>
-      <h3 class="fc--white fs--25 text-align-center">API design</h3>
+    <div class="display-grid skills-container mt--40 ls--2">
+
+      <app-skill-card [skill_details]="skill" *ngFor="let skill of skillsArray"></app-skill-card>
     </div>
   </div>
 </section>
